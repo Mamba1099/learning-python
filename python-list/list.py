@@ -2,10 +2,6 @@ this_list=["apple", "banana", "mango"]
 print(len(this_list))
 print(this_list)
 
-list1=["apple", "mango", "banana"]
-print(list1)
-print(len(list1))
-
 
 list2=[1,2,3,4,5]
 print(list2)
