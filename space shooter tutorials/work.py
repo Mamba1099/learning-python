@@ -68,8 +68,8 @@ def main():
     level = 1
     lives = 5
     clock = pygame.time.Clock()
-    player = Player(10, 30)
-    player_vel = 6
+    player = Player( 30)
+    player_vel = (300, 650)
     main_font = pygame.font.SysFont("comicsans", 30)
 
     def redraw_window():
@@ -96,7 +96,7 @@ def main():
 
 
         key = pygame.key.get_pressed()
-        if key[pygame.K_a] and player.x - player_vel > 0: #left
+        if key[pygame.K_w] and player.x - player_vel > 0: #left
               player.x -= player_vel
         if key[pygame.K_d] and player.x + player_vel + player.get_width() < WIDTH:#right
             player.x += player_vel    
